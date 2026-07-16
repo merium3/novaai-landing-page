@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NovaAI | AI SaaS Landing Page</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="loader">
+
+    <div class="loader-content">
+
+        <div class="loader-logo">NovaAI</div>
+
+        <div class="loader-spinner"></div>
+
+        <p>Loading...</p>
+
+    </div>
+
+</div>
+    <div id="progress-bar"></div>
+    <div class="glow"></div>
+
+<header>
+       <nav class="navbar">
+
+    <div class="logo">
+        <h2>NovaAI</h2>
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#features">Features</a></li>
+
+        <li><a href="#pricing">Pricing</a></li>
+
+        <li><a href="#testimonials">Testimonials</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+    <a href="login.html" class="btn">Get Started</a>
+
+</nav>
+</header>
+<!--=========================
+        HERO SECTION
+==========================-->
+<section class="hero" id="home" data-aos="fade-up">
+
+    <div class="hero-content">
+
+        <span class="badge">
+            🚀 Trusted by 10,000+ Businesses
+        </span>
+
+        <h1>
+            Work Smarter with AI,<br>
+            Not Harder.
+        </h1>
+
+        <p>
+            NovaAI helps businesses automate workflows, boost productivity,
+            and make smarter decisions using cutting-edge artificial intelligence.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="login.html" class="primary-btn">
+                Get Started
+            </a>
+
+            <a href="#" class="secondary-btn" id="openVideo">
+             <i class="fa-solid fa-play"></i>
+             Watch Demo
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="assets/images/hero.png" alt="AI Dashboard">
+
+    </div>
+    
+
+</section>
+<!-- Video Popup -->
+
+<div class="video-popup" id="videoPopup">
+
+    <div class="video-box">
+
+        <span class="close-video">&times;</span>
+
+        <video id="demoVideo" controls>
+
+            <source src="assets/videos/demo.mp4" type="video/mp4">
+
+        </video>
+
+    </div>
+
+</div>
+
+
+<!--=========================
+        FEATURES
+==========================-->
+<section class="features" id="features">
+
+    <div class="section-title">
+
+        <span>FEATURES</span>
+
+        <h2>Everything You Need To Build Smarter</h2>
+
+        <p>
+            Powerful AI tools designed to automate your workflow,
+            improve productivity and help your business grow faster.
+        </p>
+
+    </div>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+              <i class="fa-solid fa-robot"></i>  
+            </div>
+
+            <h3>AI Automation</h3>
+
+            <p>
+                Automate repetitive tasks using powerful AI workflows.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+              <i class="fa-solid fa-chart-line"></i>  
+            </div>
+
+            <h3>Advanced Analytics</h3>
+
+            <p>
+                Visualize your business performance with real-time insights.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-cloud"></i>
+            </div>
+
+            <h3>Cloud Sync</h3>
+
+            <p>
+                Access your projects securely from anywhere.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+               <i class="fa-solid fa-shield-halved"></i> 
+            </div>
+
+            <h3>Enterprise Security</h3>
+
+            <p>
+                Your data stays encrypted and protected 24/7.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+
+            <h3>Lightning Fast</h3>
+
+            <p>
+                Optimized performance for maximum productivity.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <i class="fa-solid fa-comments"></i>
+            </div>
+
+            <h3>AI Assistant</h3>
+
+            <p>
+                Chat with AI to generate ideas and solve problems instantly.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!--=========================
+      DASHBOARD SHOWCASE
+==========================-->
+<section class="stats">
+
+    <div class="stat-card">
+
+        <h2 class="counter" data-target="50000">50000</h2>
+        <p>Happy Users</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2 class="counter" data-target="120">120</h2>
+        <p>Companies</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2 class="counter" data-target="99">99%</h2>
+        <p>Success Rate</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2>24/7</h2>
+        <p>AI Support</p>
+
+    </div>
+
+</section>
+
+<section class="dashboard" data-aos="fade-right">
+
+    <div class="dashboard-content">
+
+        <span>AI DASHBOARD</span>
+
+        <h2>Powerful Dashboard Built For Modern Businesses</h2>
+
+        <p>
+            Monitor analytics, automate workflows, manage projects and
+            track performance using one intelligent platform.
+        </p>
+
+        <div class="stats">
+
+            <div class="stat">
+                <h3>98%</h3>
+                <p>Customer Satisfaction</p>
+            </div>
+
+            <div class="stat">
+                <h3>25K+</h3>
+                <p>Active Users</p>
+            </div>
+
+            <div class="stat">
+                <h3>350+</h3>
+                <p>Companies</p>
+            </div>
+
+            <div class="stat">
+                <h3>24/7</h3>
+                <p>AI Support</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="dashboard-image">
+
+        <img src="assets/images/dashboard.png" alt="AI Dashboard">
+
+    </div>
+
+</section>
+<section class="services" id="services">
+
+    <div class="section-title">
+
+        <h2>Our AI Services</h2>
+
+        <p>Powerful AI solutions to grow your business.</p>
+
+    </div>
+
+    <div class="services-container">
+
+        <div class="service-card" data-aos="fade-up">
+
+            <i class="fa-solid fa-robot"></i>
+
+            <h3>AI Assistant</h3>
+
+            <p>Chat with intelligent AI to boost productivity.</p>
+
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+
+            <i class="fa-solid fa-chart-simple"></i>
+
+            <h3>Smart Analytics</h3>
+
+            <p>Real-time reports and powerful business insights.</p>
+
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <h3>Automation</h3>
+
+            <p>Automate repetitive work using AI workflows.</p>
+
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="450">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <h3>Secure Data</h3>
+
+            <p>Enterprise-grade security for all your AI data.</p>
+
+        </div>
+
+    </div>
+
+</section>
+<!--=========================
+        PRICING
+==========================-->
+
+<section class="pricing" id="pricing" data-aos="zoom-in">
+
+    <div class="section-title">
+
+        <span>PRICING</span>
+
+        <h2>Choose The Perfect Plan</h2>
+
+        <p>
+            Flexible pricing plans for startups, businesses and enterprises.
+        </p>
+
+    </div>
+
+    <div class="pricing-grid">
+
+        <!-- Basic -->
+
+        <div class="price-card">
+
+            <h3>Starter</h3>
+
+            <h2>$19<span>/month</span></h2>
+
+            <ul>
+
+                <li>✔ AI Assistant</li>
+                <li>✔ Analytics Dashboard</li>
+                <li>✔ Email Support</li>
+                <li>✔ 10 Projects</li>
+
+            </ul>
+
+            <a href="login.html" class="primary-btn">Get Started</a>
+
+        </div>
+
+        <!-- Popular -->
+
+<div class="price-card popular">
+            <div class="badge-price">
+                <h3>Most Popular</h3>
+                </div>
+
+            <h3>Professional</h3>
+
+            <h2>$49<span>/month</span></h2>
+
+            <ul>
+
+                <li>✔ Unlimited Projects</li>
+                <li>✔ AI Automation</li>
+                <li>✔ Cloud Storage</li>
+                <li>✔ Priority Support</li>
+
+            </ul>
+
+            <a href="login.html" class="primary-btn">Start Free Trial</a>
+
+        </div>
+
+        <!-- Enterprise -->
+
+        <div class="price-card">
+
+            <h3>Enterprise</h3>
+
+            <h2>$99<span>/month</span></h2>
+
+            <ul>
+
+                <li>✔ Dedicated AI</li>
+                <li>✔ API Access</li>
+                <li>✔ Team Management</li>
+                <li>✔ 24/7 Support</li>
+
+            </ul>
+
+            <a href="login.html" class="primary-btn">Contact Sales</a>
+
+        </div>
+
+    </div>
+
+</section>
+<!--=========================
+      TESTIMONIALS
+==========================-->
+
+<section class="testimonials" id="testimonials" data-aos="fade-up">
+
+    <div class="section-title">
+
+        <span>TESTIMONIALS</span>
+
+        <h2>What Our Clients Say</h2>
+
+        <p>
+            Thousands of businesses trust NovaAI to improve productivity
+            and streamline their workflows.
+        </p>
+
+    </div>
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+
+            <img src="assets/images/user1.jpg" alt="Client">
+
+            <h3>Sarah Johnson</h3>
+
+            <span>Marketing Manager</span>
+
+            <p>
+                "NovaAI completely transformed our workflow. The automation
+                features save us hours every week."
+            </p>
+
+            <div class="stars">★★★★★</div>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <img src="assets/images/user2.jpg" alt="Client">
+
+            <h3>Michael Brown</h3>
+
+            <span>Startup Founder</span>
+
+            <p>
+                "The dashboard is beautiful, fast, and incredibly easy to use.
+                Highly recommended!"
+            </p>
+
+            <div class="stars">★★★★★</div>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <img src="assets/images/user3.jpg" alt="Client">
+
+            <h3>Emily Davis</h3>
+
+            <span>Business Consultant</span>
+
+            <p>
+                "Our team productivity increased significantly after using
+                NovaAI. Excellent platform."
+            </p>
+
+            <div class="stars">★★★★★</div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--=========================
+            FAQ
+==========================-->
+
+<section class="faq" id="faq" data-aos="fade-left">
+
+    <div class="section-title">
+
+        <span>FAQ</span>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <p>
+            Everything you need to know about NovaAI.
+        </p>
+
+    </div>
+
+    <div class="faq-container">
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                What is NovaAI?
+
+                <span>+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    NovaAI is an AI-powered productivity platform that helps businesses automate workflows and improve efficiency.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Is there a free trial?
+
+                <span>+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Yes, you can try NovaAI free for 14 days without any credit card.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Is my data secure?
+
+                <span>+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Absolutely. We use enterprise-grade encryption to keep your data safe.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="cta" data-aos="zoom-in">
+
+<h2>Ready to Transform Your Business?</h2>
+
+<p>
+
+Start using NovaAI today and experience the future of AI-powered productivity.
+
+</p>
+
+<a href="login.html" class="primary-btn" style="background: #050816;">
+
+Start Free Trial
+
+</a>
+
+</section>
+<!--=========================
+        CONTACT
+==========================-->
+
+<section class="contact" id="contact">
+
+    <div class="section-title">
+
+        <span>CONTACT</span>
+
+        <h2>Let's Build Something Amazing</h2>
+
+        <p>
+            Have a project in mind? We'd love to hear from you.
+        </p>
+
+    </div>
+
+    <div class="contact-container">
+
+        <form class="contact-form">
+
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <input type="text" placeholder="Subject">
+
+            <textarea rows="6" placeholder="Your Message"></textarea>
+
+            <button class="primary-btn" type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+<!--=========================
+          FOOTER
+==========================-->
+
+<footer class="footer" data-aos="fade-up">
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+
+            <h2>NovaAI</h2>
+
+            <p>
+                Empowering businesses with AI-powered solutions to improve productivity,
+                automate workflows and drive innovation.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Resources</h3>
+
+            <ul>
+
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-newsletter">
+
+            <h3>Newsletter</h3>
+
+            <p>Subscribe for the latest AI updates.</p>
+
+            <form>
+
+                <input type="email" placeholder="Enter your email">
+
+                <button type="submit">Subscribe</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+
+        <p>© 2026 NovaAI. All Rights Reserved.</p>
+
+    </div>
+
+</footer>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

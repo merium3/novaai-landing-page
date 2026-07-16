@@ -1,0 +1,503 @@
+/*=========================
+      GOOGLE FONT
+=========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*=========================
+      GLOBAL
+=========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#0B1120;
+    color:#fff;
+    overflow:hidden;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+
+}
+
+/*=========================
+    BACKGROUND GLOW
+=========================*/
+
+.bg-circle{
+
+    position:absolute;
+    border-radius:50%;
+    filter:blur(120px);
+    z-index:-1;
+    animation:float 8s ease-in-out infinite;
+
+}
+
+.circle1{
+
+    width:350px;
+    height:350px;
+    background:#8B5CF6;
+    top:-120px;
+    left:-120px;
+
+}
+
+.circle2{
+
+    width:300px;
+    height:300px;
+    background:#6366F1;
+    bottom:-100px;
+    right:-100px;
+    animation-delay:2s;
+
+}
+
+@keyframes float{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-30px);
+
+    }
+
+}
+
+/*=========================
+     MAIN SECTION
+=========================*/
+
+.login-section{
+
+    width:90%;
+    max-width:1200px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+
+}
+
+/*=========================
+      LEFT SIDE
+=========================*/
+
+.login-left h1{
+
+    font-size:58px;
+    font-weight:700;
+
+    background:linear-gradient(90deg,#fff,#8B5CF6);
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+}
+
+.login-left h2{
+
+    margin:20px 0;
+    font-size:40px;
+
+}
+
+.login-left p{
+
+    color:#CBD5E1;
+    line-height:1.8;
+    margin-bottom:30px;
+
+}
+
+.login-left ul{
+
+    list-style:none;
+
+}
+
+.login-left ul li{
+
+    margin:18px 0;
+    font-size:18px;
+    color:#CBD5E1;
+
+}
+
+.login-left i{
+
+    color:#8B5CF6;
+    margin-right:10px;
+
+}
+
+/*=========================
+      LOGIN CARD
+=========================*/
+
+.login-card{
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:30px;
+
+    padding:50px;
+
+    box-shadow:0 0 50px rgba(139,92,246,.25);
+
+    animation:card 1s ease;
+
+}
+
+@keyframes card{
+
+    from{
+
+        transform:translateY(40px);
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateY(0);
+        opacity:1;
+
+    }
+
+}
+
+.login-card h2{
+
+    font-size:36px;
+    margin-bottom:10px;
+
+}
+
+.login-card p{
+
+    color:#CBD5E1;
+    margin-bottom:35px;
+
+}
+
+/*=========================
+      INPUT
+=========================*/
+
+.input-box{
+
+    position:relative;
+    margin-bottom:25px;
+
+}
+
+.input-box > i{
+
+    position:absolute;
+
+    top:50%;
+    left:18px;
+
+    transform:translateY(-50%);
+
+    color:#8B5CF6;
+
+}
+
+.input-box input{
+
+    width:100%;
+    padding:16px 55px 16px 50px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:12px;
+
+    color:#fff;
+
+    outline:none;
+
+    transition:.4s;
+
+}
+
+.input-box input::placeholder{
+
+    color:#94A3B8;
+
+}
+
+.input-box input:focus{
+
+    border-color:#8B5CF6;
+
+    box-shadow:0 0 20px rgba(139,92,246,.35);
+
+}
+
+/*=========================
+      LOGIN BUTTON
+=========================*/
+
+.login-btn{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(90deg,#8B5CF6,#6366F1);
+
+    color:#fff;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.login-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 0 30px rgba(139,92,246,.5);
+
+}
+
+/*=========================
+      DIVIDER
+=========================*/
+
+.divider{
+
+    text-align:center;
+    margin:30px 0;
+    position:relative;
+
+}
+
+.divider::before{
+
+    content:"";
+    position:absolute;
+    width:100%;
+    height:1px;
+    background:rgba(255,255,255,.1);
+    left:0;
+    top:50%;
+
+}
+
+.divider span{
+
+    background:#121A2F;
+    padding:0 18px;
+    position:relative;
+
+}
+
+/*=========================
+   SOCIAL BUTTONS
+=========================*/
+
+.google-btn,
+.facebook-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.05);
+
+    color:#fff;
+
+    cursor:pointer;
+
+    margin-bottom:15px;
+
+    transition:.4s;
+
+}
+
+.google-btn:hover,
+.facebook-btn:hover{
+
+    background:#8B5CF6;
+
+    transform:translateY(-3px);
+
+}
+
+.google-btn i,
+.facebook-btn i{
+
+    margin-right:10px;
+
+}
+
+/*=========================
+    BOTTOM LINKS
+=========================*/
+
+.bottom-links{
+
+    margin-top:30px;
+    text-align:center;
+
+}
+
+.bottom-links a{
+
+    color:#8B5CF6;
+    text-decoration:none;
+
+}
+
+.bottom-links p{
+
+    margin-top:15px;
+
+}
+
+/*=========================
+     RESPONSIVE
+=========================*/
+
+@media(max-width:991px){
+
+.login-section{
+
+    grid-template-columns:1fr;
+
+}
+
+.login-left{
+
+    display:none;
+
+}
+
+.login-card{
+
+    padding:35px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.login-card{
+
+    padding:25px;
+
+}
+
+.login-card h2{
+
+    font-size:28px;
+
+}
+
+}
+/*=========================
+        TOAST
+=========================*/
+
+.toast{
+
+    position:fixed;
+
+    top:30px;
+
+    right:-400px;
+
+    padding:16px 30px;
+
+    border-radius:12px;
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:.5s;
+
+    z-index:9999;
+
+    backdrop-filter:blur(15px);
+
+}
+
+.toast.success{
+
+    background:#22C55E;
+
+}
+
+.toast.error{
+
+    background:#EF4444;
+
+}
+
+.toast.show{
+
+    right:30px;
+
+}
+#togglePassword{
+
+    position:absolute;
+
+    top:50%;
+    right:18px;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    color:#94A3B8;
+
+    font-size:18px;
+
+    z-index:10;
+
+}
+
+#togglePassword:hover{
+
+    color:#8B5CF6;
+
+}
