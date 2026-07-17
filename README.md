@@ -2,13 +2,6 @@
 
 A modern and responsive AI SaaS Landing Page built using HTML, CSS, and JavaScript. The project features a premium user interface with smooth animations, glassmorphism effects, and a fully responsive design.
 
-## 🚀 Live Demo
-
-(Add your Netlify link here after deployment)
-
-Example:
-https://your-site-name.netlify.app
-
 ---
 
 ## ✨ Features
