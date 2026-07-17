@@ -49,16 +49,6 @@ NovaAI/
 └── README.md
 ```
 
----
-
-## 📸 Preview
-
-Add a screenshot of your homepage here.
-
-Example:
-
-```
-assets/images/preview.png
 ```
 
 ---
